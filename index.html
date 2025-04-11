@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ukvra - Arte & Tecnología</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+      border-radius: 1rem;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+    .service {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .images img {
+      width: 200px;
+      border-radius: 1rem;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: none;
+    }
+    button {
+      background-color: #f59e0b;
+      color: white;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+    }
+    a.whatsapp {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #25D366;
+      color: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ukvra</h1>
+    <p>Arte & Tecnología: Sublimación, impresión 3D y grabado láser</p>
+  </header>
+
+  <section>
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Sublimación</h3>
+        <p>Tazas, remeras, almohadones, ¡todo personalizado!</p>
+      </div>
+      <div class="service">
+        <h3>Impresión 3D</h3>
+        <p>Diseños únicos, repuestos y prototipos.</p>
+      </div>
+      <div class="service">
+        <h3>Grabado Láser</h3>
+        <p>Madera, acrílico, cuero y más.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Galería</h2>
+    <div class="images">
+      <img src="https://via.placeholder.com/200x200?text=Producto+1" alt="Ejemplo 1">
+      <img src="https://via.placeholder.com/200x200?text=Producto+2" alt="Ejemplo 2">
+      <img src="https://via.placeholder.com/200x200?text=Producto+3" alt="Ejemplo 3">
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/{tu-email-id}" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu email" required />
+      <textarea name="mensaje" placeholder="Escribí tu mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <a class="whatsapp" href="https://wa.me/549XXXXXXXXXX" target="_blank">Escribinos por WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2025 ukvra - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
